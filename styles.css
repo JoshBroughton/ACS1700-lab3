@@ -1,0 +1,86 @@
+.dashboard {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+                        "a a a a"
+                        "b c c c"
+                        "d e f g";
+}
+
+.title {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-cell {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+}
+
+.population {
+    grid-area: b;
+    justify-content: flex-end;
+    background-image: url(images/population.jpg);
+    background-size: cover;
+}
+
+.welcome {
+    grid-area: c;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(images/welcome.jpg);
+    background-size: cover;
+}
+
+.gdp {
+    grid-area: d;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(images/gdp.jpg);
+    background-size: cover;
+}
+
+.code {
+    grid-area: e;
+    background-image: url(images/code.jpg);
+    background-size: cover;
+}
+
+.govt {
+    grid-area: f;
+    justify-content: flex-end;
+    background-image: url(images/government.jpg);
+    background-size: cover;
+}
+
+.news {
+    grid-area: g;
+    background-image: url(images/news.jpg);
+    background-size: cover;
+}
+
+button {
+    width: 50px;
+    align-self: flex-end;
+    margin-top: 5px;
+}
